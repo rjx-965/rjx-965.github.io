@@ -87,7 +87,7 @@
 <meta property="og:description" content="网上有很多hexo + github的教程，但是都或多或少有些错误，在搭的过程中也遇到了一些问题。所以写一个教程，把具体的流程和遇到的问题写一下。 #搭建流程 1. Hexo 介绍Hexo是基于NodeJs的静态博客框架，简单、轻量，其生成的静态网页可以托管在Github上。  超快速度 支持Markdown 可以通过命令行一键部署">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://yoursite.com/2019/09/02/blog/resources/1C60A198D79234A0D8B426BA0D0686CA.jpg">
-<meta property="og:updated_time" content="2019-09-02T13:49:01.703Z">
+<meta property="og:updated_time" content="2019-09-02T13:58:54.328Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo + github 博客搭建教程">
 <meta name="twitter:description" content="网上有很多hexo + github的教程，但是都或多或少有些错误，在搭的过程中也遇到了一些问题。所以写一个教程，把具体的流程和遇到的问题写一下。 #搭建流程 1. Hexo 介绍Hexo是基于NodeJs的静态博客框架，简单、轻量，其生成的静态网页可以托管在Github上。  超快速度 支持Markdown 可以通过命令行一键部署">
@@ -436,6 +436,24 @@
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id="container"&gt;&lt;/div&gt;</span><br><span class="line">&lt;link rel=<span class="string">"stylesheet"</span> href=<span class="string">"https://jjeejj.github.io/css/gitment.css"</span>&gt;</span><br><span class="line">&lt;script src="https://www.wenjunjiang.win/js/gitment.js"&gt;&lt;/script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">var gitment = new Gitment(&#123;</span><br><span class="line">  id: <span class="string">'&lt;%= page.date %&gt;'</span>, </span><br><span class="line">  owner: <span class="string">'你的 GitHub ID'</span>,</span><br><span class="line">  repo: <span class="string">'存储评论的 repo'</span>,</span><br><span class="line">  oauth: &#123;</span><br><span class="line">    client_id: <span class="string">'你的 client ID'</span>,</span><br><span class="line">    client_secret: <span class="string">'你的 client secret'</span>,</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;)</span><br><span class="line">gitment.render(<span class="string">'container'</span>)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
 
 <h3 id="10-3-初始化评论"><a href="#10-3-初始化评论" class="headerlink" title="10.3 初始化评论"></a>10.3 初始化评论</h3><p>页面发布后，需要访问页面并使用github账号登陆，点击初始化按钮。<br>之后即可发表评论。</p>
+<div id="container"></div>
+<link rel="stylesheet" href="https://jjeejj.github.io/css/gitment.css">
+<script src="https://www.wenjunjiang.win/js/gitment.js"></script>
+<script>
+var gitment = new Gitment({
+  id: '<%= page.date %>', // 可选。默认为 location.href
+  owner: 'rjx-965',
+  repo: 'rjx-965.github.io',
+  oauth: {
+    client_id: 'dec9bedb8959a5b76ea5',
+    client_secret: 'fba57aad0356aaf1f4aaeb29e56ea3c2ad30d7ac',
+  },
+})
+gitment.render('container')
+</script>
+
+
+
 
       
     </div>
