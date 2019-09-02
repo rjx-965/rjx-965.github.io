@@ -319,8 +319,7 @@
 
       
         
-          
-            <p>网上有很多hexo + github的教程，但是都或多或少有些错误，在搭的过程中也遇到了一些问题。所以写一个教程，把具体的流程和遇到的问题写一下。</p>
+          <p>网上有很多hexo + github的教程，但是都或多或少有些错误，在搭的过程中也遇到了一些问题。所以写一个教程，把具体的流程和遇到的问题写一下。</p>
 <p>#搭建流程</p>
 <h2 id="1-Hexo-介绍"><a href="#1-Hexo-介绍" class="headerlink" title="1. Hexo 介绍"></a>1. Hexo 介绍</h2><p>Hexo是基于NodeJs的静态博客框架，简单、轻量，其生成的静态网页可以托管在Github上。</p>
 <ul>
@@ -337,104 +336,13 @@
 <h3 id="2-2-安装-hexo"><a href="#2-2-安装-hexo" class="headerlink" title="2.2 安装 hexo"></a>2.2 安装 hexo</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g  <span class="comment">#linux系统</span></span><br></pre></td></tr></table></figure>
 
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo npm install hexo-cli -g <span class="comment">#mac</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="3-在本地进行搭建博客"><a href="#3-在本地进行搭建博客" class="headerlink" title="3.在本地进行搭建博客"></a>3.在本地进行搭建博客</h2><p>cd 到想要存放博客的路径下。</p>
-<h3 id="3-1-创建博客存放目录-rjx-965-github-io"><a href="#3-1-创建博客存放目录-rjx-965-github-io" class="headerlink" title="3.1 创建博客存放目录 rjx-965.github.io"></a>3.1 创建博客存放目录 rjx-965.github.io</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init rjx<span class="number">-965.</span>github.io <span class="comment">#.github.io前面为github的用户名</span></span><br><span class="line">$ cd rjx<span class="number">-965.</span>github.io</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
-
-<h3 id="3-2-生成静态页面"><a href="#3-2-生成静态页面" class="headerlink" title="3.2 生成静态页面"></a>3.2 生成静态页面</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g <span class="comment">#generate</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="3-3-运行"><a href="#3-3-运行" class="headerlink" title="3.3 运行"></a>3.3 运行</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
-
-<p>打开浏览器输入 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 即可查看</p>
-<h2 id="4-发文章"><a href="#4-发文章" class="headerlink" title="4.发文章"></a>4.发文章</h2><h3 id="4-1通过命令行直接发文章"><a href="#4-1通过命令行直接发文章" class="headerlink" title="4.1通过命令行直接发文章"></a>4.1通过命令行直接发文章</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new test</span><br></pre></td></tr></table></figure>
-
-<p>可以看到在source/_posts目录下生成test.md的markdown文件，输入一些内容，进行保存。</p>
-<p>部署生成，查看效果。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
-
-<p>打开浏览器输入 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 即可查看</p>
-<h3 id="4-2直接新建"><a href="#4-2直接新建" class="headerlink" title="4.2直接新建"></a>4.2直接新建</h3><p>在 source/_posts/ 下新建一个.md的文件</p>
-<h2 id="5-配置"><a href="#5-配置" class="headerlink" title="5.配置"></a>5.配置</h2><p>网站的设置大部分都在<strong>_config.yml</strong>文件中，详细配置可以查看<a href="https://hexo.io/zh-cn/docs/configuration.html" target="_blank" rel="noopener">官方文档</a><br>下面只列出简单常用配置</p>
-<ul>
-<li>title -&gt; 网站标题</li>
-<li>subtitle -&gt; 网站副标题</li>
-<li>description -&gt; 网站描述</li>
-<li>author -&gt; 名字</li>
-<li>language -&gt; 网站使用的语言</li>
-</ul>
-<p>坑：配置时，在 *<em>: *</em>后面加一个英文空格</p>
-<h2 id="6-更换主题"><a href="#6-更换主题" class="headerlink" title="6.更换主题"></a>6.更换主题</h2><p>Hexo 中有很多主题，可以在<a href="https://hexo.io/themes/" target="_blank" rel="noopener">官网</a>查看。下面列举更换主题的一般套路:</p>
-<h3 id="6-1-下载主题"><a href="#6-1-下载主题" class="headerlink" title="6.1 下载主题"></a>6.1 下载主题</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git clone https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
-
-<h3 id="6-2-应用下载的主题"><a href="#6-2-应用下载的主题" class="headerlink" title="6.2 应用下载的主题"></a>6.2 应用下载的主题</h3><p>在网站配置文件<strong>_config.yml中，配置theme</strong></p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: next</span><br></pre></td></tr></table></figure>
-
-<p>next是主题名称</p>
-<h3 id="6-3-主题配置"><a href="#6-3-主题配置" class="headerlink" title="6.3 主题配置"></a>6.3 主题配置</h3><p>在/theme/{theme}/_config.yml 主题的配置文件下进行主题的配置。、</p>
-<p>调试，查看效果：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
-
-<h2 id="7-部署到Github"><a href="#7-部署到Github" class="headerlink" title="7 部署到Github"></a>7 部署到Github</h2><h3 id="7-1-复制自己的github账号-rjx-965"><a href="#7-1-复制自己的github账号-rjx-965" class="headerlink" title="7.1 复制自己的github账号(rjx-965)"></a>7.1 复制自己的github账号(rjx-965)</h3><h3 id="7-2-创建一个名为rjx-965-github-io的public仓库"><a href="#7-2-创建一个名为rjx-965-github-io的public仓库" class="headerlink" title="7.2 创建一个名为rjx-965.github.io的public仓库"></a>7.2 创建一个名为rjx-965.github.io的public仓库</h3><p>![IMAGE](resources/6B35A21E0BF3119F90E414937DFC654E.jpg =174x196)</p>
-<hr>
-<p>![IMAGE](resources/3952DECF339D5535175F471DE89B830C.jpg =808x789)</p>
-<h3 id="7-3-安装-hexo-deployer-git"><a href="#7-3-安装-hexo-deployer-git" class="headerlink" title="7.3 安装 hexo-deployer-git"></a>7.3 安装 hexo-deployer-git</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-
-<h3 id="7-4-网站配置git"><a href="#7-4-网站配置git" class="headerlink" title="7.4 网站配置git"></a>7.4 网站配置git</h3><p>在网站的_config.yml中配置deploy</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: &lt;repository url&gt;   <span class="comment">#代码仓库地址</span></span><br><span class="line">  branch: [branch]</span><br></pre></td></tr></table></figure>
-
-<h3 id="7-5-部署"><a href="#7-5-部署" class="headerlink" title="7.5 部署"></a>7.5 部署</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
-
-<h2 id="8-贴标签，以便搜索"><a href="#8-贴标签，以便搜索" class="headerlink" title="8 贴标签，以便搜索"></a>8 贴标签，以便搜索</h2><h3 id="8-1两个确认"><a href="#8-1两个确认" class="headerlink" title="8.1两个确认"></a>8.1两个确认</h3><ul>
-<li>确认站点配置文件有</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar_dir: tags</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>确认主题配置文件有</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tags: tags</span><br></pre></td></tr></table></figure>
-
-<h3 id="8-2-新建tags页面"><a href="#8-2-新建tags页面" class="headerlink" title="8.2 新建tags页面"></a>8.2 新建tags页面</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page tags</span><br></pre></td></tr></table></figure>
-
-<p>此时会在 source/下生成 tags/index.md文件</p>
-<h3 id="8-3-修改source-tags-index-md"><a href="#8-3-修改source-tags-index-md" class="headerlink" title="8.3 修改source/tags/index.md"></a>8.3 修改source/tags/index.md</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">title: tags</span><br><span class="line">date: <span class="number">2019</span><span class="number">-09</span><span class="number">-02</span> <span class="number">16</span>:<span class="number">15</span>:<span class="number">15</span></span><br><span class="line">type: <span class="string">"tags"</span></span><br><span class="line">comments: false</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>date 可以保存系统生成的时间 </p>
-</blockquote>
-<h3 id="8-4-在文章中添加-tags"><a href="#8-4-在文章中添加-tags" class="headerlink" title="8.4 在文章中添加 tags"></a>8.4 在文章中添加 tags</h3><p>在文章markdown文件中添加：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">tags : </span><br><span class="line">              - Tag1</span><br><span class="line">              - Tag2</span><br><span class="line">              - Tag3</span><br></pre></td></tr></table></figure>
-
-<p>文件头类似：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">title: TagEditText</span><br><span class="line">date: <span class="number">2019</span><span class="number">-09</span><span class="number">-02</span> <span class="number">16</span>:<span class="number">44</span>:<span class="number">25</span></span><br><span class="line">tags: </span><br><span class="line">	- Tag1</span><br><span class="line">	- Tag2</span><br><span class="line">	- Tag3</span><br></pre></td></tr></table></figure>
-
-<h2 id="9-分类，给文章归档"><a href="#9-分类，给文章归档" class="headerlink" title="9 分类，给文章归档"></a>9 分类，给文章归档</h2><hr>
-<h3 id="9-1-确认"><a href="#9-1-确认" class="headerlink" title="9.1 确认"></a>9.1 确认</h3><ul>
-<li>确认站点配置文件是否打开</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">category_dir: categories</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>确认主题配置文件是否打开</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">categories: /categories</span><br></pre></td></tr></table></figure>
-
-<h3 id="9-2-新建categories-文件"><a href="#9-2-新建categories-文件" class="headerlink" title="9.2 新建categories 文件"></a>9.2 新建categories 文件</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page categories</span><br></pre></td></tr></table></figure>
-
-<p>在markdown文件中添加：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">categories:</span><br><span class="line">      - cate</span><br></pre></td></tr></table></figure>
-
-<p>文件头部类似：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">title: TagEditText</span><br><span class="line">date: <span class="number">2019</span><span class="number">-09</span><span class="number">-02</span> <span class="number">16</span>:<span class="number">44</span>:<span class="number">25</span></span><br><span class="line">categories: </span><br><span class="line">	- cate</span><br></pre></td></tr></table></figure>
-
-<h2 id="10-添加评论"><a href="#10-添加评论" class="headerlink" title="10.添加评论"></a>10.添加评论</h2><h3 id="使用Gitment搭建评论系统"><a href="#使用Gitment搭建评论系统" class="headerlink" title="使用Gitment搭建评论系统"></a>使用Gitment搭建评论系统</h3><p>Gitment是一款基于Github Issues的评论系统。支持在前端直接引入，所以可以直接插入到markdown的文件末尾。可以在页面进行登录、查看、评论、点赞等操作，同时有完整的 Markdown / GFM 和代码高亮支持。<br>Gitment只支持通过github账号登陆。<br>基础使用</p>
-<h3 id="10-1-注册OAuth-Application"><a href="#10-1-注册OAuth-Application" class="headerlink" title="10.1 注册OAuth Application"></a>10.1 注册OAuth Application</h3><p>获得一个新的OAuth Application。其他内容可以随意填写，但是注意要将callback URL填为评论页面对应的域名，如 <a href="https://rjx-965.github.io/" target="_blank" rel="noopener">https://rjx-965.github.io/</a><br>此时将会得到一个client ID 和一个 client secret，将被用于之后的用户登录。</p>
-<h3 id="10-2-引入-Gitment"><a href="#10-2-引入-Gitment" class="headerlink" title="10.2 引入 Gitment"></a>10.2 引入 Gitment</h3><p>将下面代码添加到markdown的文件末尾：</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id="container"&gt;&lt;/div&gt;</span><br><span class="line">&lt;link rel=<span class="string">"stylesheet"</span> href=<span class="string">"https://jjeejj.github.io/css/gitment.css"</span>&gt;</span><br><span class="line">&lt;script src="https://www.wenjunjiang.win/js/gitment.js"&gt;&lt;/script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">var gitment = new Gitment(&#123;</span><br><span class="line">  id: <span class="string">'&lt;%= page.date %&gt;'</span>, </span><br><span class="line">  owner: <span class="string">'你的 GitHub ID'</span>,</span><br><span class="line">  repo: <span class="string">'存储评论的 repo'</span>,</span><br><span class="line">  oauth: &#123;</span><br><span class="line">    client_id: <span class="string">'你的 client ID'</span>,</span><br><span class="line">    client_secret: <span class="string">'你的 client secret'</span>,</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;)</span><br><span class="line">gitment.render(<span class="string">'container'</span>)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-
-<h3 id="10-3-初始化评论"><a href="#10-3-初始化评论" class="headerlink" title="10.3 初始化评论"></a>10.3 初始化评论</h3><p>页面发布后，需要访问页面并使用github账号登陆，点击初始化按钮。<br>之后即可发表评论。</p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/09/02/blog/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -573,15 +481,14 @@
 
       
         
-          
-            <h2 id="Numpy"><a href="#Numpy" class="headerlink" title="Numpy"></a>Numpy</h2><h3 id="1-numpy-对文本的编辑"><a href="#1-numpy-对文本的编辑" class="headerlink" title="1.numpy 对文本的编辑"></a>1.numpy 对文本的编辑</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy as np</span><br><span class="line"></span><br><span class="line">filename = '/Users/renjiaxin/Downloads/numpy/test.txt'</span><br><span class="line">file = open(filename,mode=<span class="string">'r'</span>)</span><br><span class="line">text = file.read()</span><br><span class="line">print(file.closed)</span><br><span class="line">file.close()</span><br><span class="line">print(text)</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-numpy对矩阵的操作"><a href="#2-numpy对矩阵的操作" class="headerlink" title="2.numpy对矩阵的操作"></a>2.numpy对矩阵的操作</h3><h4 id="①-矩阵的特性"><a href="#①-矩阵的特性" class="headerlink" title="① 矩阵的特性"></a>① 矩阵的特性</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">array = np.array([[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>],[<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>]])</span><br><span class="line">print(array)</span><br><span class="line">print(<span class="string">'Number of dim'</span>,array.ndim) <span class="comment">#矩阵的维数</span></span><br><span class="line">print(<span class="string">'shape'</span>,array.shape) <span class="comment">#矩阵的形状</span></span><br><span class="line">print(<span class="string">'size'</span>,array.size) <span class="comment">#矩阵的大小</span></span><br></pre></td></tr></table></figure>
-
-<p>result :</p>
-<p><img src="resources/76758A1B209EF211E8CE3A8E822C688A.jpg" alt></p>
-<h4 id="②-矩阵的创建"><a href="#②-矩阵的创建" class="headerlink" title="② 矩阵的创建"></a>② 矩阵的创建</h4>
-          
+          <h2 id="Numpy"><a href="#Numpy" class="headerlink" title="Numpy"></a>Numpy</h2><h3 id="1-numpy-对文本的编辑"><a href="#1-numpy-对文本的编辑" class="headerlink" title="1.numpy 对文本的编辑"></a>1.numpy 对文本的编辑</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy as np</span><br><span class="line"></span><br><span class="line">filename = '/Users/renjiaxin/Downloads/numpy/test.txt'</span><br><span class="line">file = open(filename,mode=<span class="string">'r'</span>)</span><br><span class="line">text = file.read()</span><br><span class="line">print(file.closed)</span><br><span class="line">file.close()</span><br><span class="line">print(text)</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/09/02/numpy&pandas/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -718,169 +625,18 @@
 
       
         
-          
-            <h2 id="信道估计"><a href="#信道估计" class="headerlink" title="信道估计"></a>信道估计</h2><p>&ensp;&ensp;&ensp;&ensp;在大规模 MIMO 波束毫米波场景下，信道估计极具挑战性，尤其是在天线阵列密集、接收机配备的射频链路受限的场景。</p>
+          <h2 id="信道估计"><a href="#信道估计" class="headerlink" title="信道估计"></a>信道估计</h2><p>&ensp;&ensp;&ensp;&ensp;在大规模 MIMO 波束毫米波场景下，信道估计极具挑战性，尤其是在天线阵列密集、接收机配备的射频链路受限的场景。</p>
 <h4 id="1-Deep-learning-based-channel-estimation-for-beamspace-mmWave-massive-MIMO-systems"><a href="#1-Deep-learning-based-channel-estimation-for-beamspace-mmWave-massive-MIMO-systems" class="headerlink" title="1.Deep learning-based channel estimation for beamspace mmWave massive MIMO systems"></a>1.<a href="https://arxiv.org/pdf/1802.01290.pdf" target="_blank" rel="noopener">Deep learning-based channel estimation for beamspace mmWave massive MIMO systems</a></h4><p>&ensp;&ensp;&ensp;&ensp;LDAMP网络来解决这一信道估计问题。该网络将信道矩阵视作二维图像作为输入，并将降噪的卷积神经网络融合到迭代信号重建算法中进行信道估计。它不是直接从含有噪声的信道图像中学习信道图像，而是先学习残余噪声，然后通过相减操作获得信道估计的图像。</p>
 <hr>
 <h4 id="2-Learning-the-MMSE-channel-estimator"><a href="#2-Learning-the-MMSE-channel-estimator" class="headerlink" title="2.Learning the MMSE channel estimator"></a>2.<a href="https://arxiv.org/pdf/1707.05674.pdf" target="_blank" rel="noopener">Learning the MMSE channel estimator</a></h4><p>&ensp;&ensp;&ensp;&ensp;基于深度学习的信道估计器，其中估计的信道向量为条件高斯随机变量，协方差矩阵具有随机性。如果协方差矩阵具有特普利兹特性和移不变的结构特性，则 MMSE 信道估计器的复杂度将降低很多。在信道的协方差矩阵不具备上述特性时，信道估计的复杂度将会变得很大。为了降低信道估计的复杂度，论文仍假设采用 MMSE的结构模型，并利用 CNN 对误差进行补偿。</p>
 <hr>
-<h2 id="信号检测"><a href="#信号检测" class="headerlink" title="信号检测"></a>信号检测</h2><h4 id="1-Power-of-deep-learning-for-channel-estimation-and-signal-detection-in-OFDM-systems"><a href="#1-Power-of-deep-learning-for-channel-estimation-and-signal-detection-in-OFDM-systems" class="headerlink" title="1. Power of deep learning for channel estimation and signal detection in OFDM systems"></a>1.<a href="https://arxiv.org/pdf/1708.08514.pdf" target="_blank" rel="noopener"> Power of deep learning for channel estimation and signal detection in OFDM systems</a></h4><p>&ensp;&ensp;&ensp;&ensp;利用 DNN 实现 OFDM系统中的信号检测问题。论文将信道估计和信号检测视为一个整体，直接用 DNN 实现由接收信号到原始信号的映射。<br>&ensp;&ensp;&ensp;&ensp;缺点：1.训练时间和复杂度较高；2.非线性情况还没有得到很好地解决。</p>
-<h4 id="2-Deep-MIMO-detection"><a href="#2-Deep-MIMO-detection" class="headerlink" title="2.Deep MIMO detection"></a>2.<a href="https://arxiv.org/pdf/1706.01151.pdf" target="_blank" rel="noopener">Deep MIMO detection</a></h4><p>&ensp;&ensp;&ensp;&ensp; MIMO 系统的信号重建问题，提出了信号检测算法 DetNet。DetNet 在最大似然法基础上加入梯度下降算法，从而生成一个深度学习网络。</p>
-<hr>
-<h2 id="信道状态信息-CSI-的反馈与重建"><a href="#信道状态信息-CSI-的反馈与重建" class="headerlink" title="信道状态信息(CSI)的反馈与重建"></a>信道状态信息(CSI)的反馈与重建</h2><hr>
-<h2 id="信道解码"><a href="#信道解码" class="headerlink" title="信道解码"></a>信道解码</h2><hr>
-<h2 id="端到端的通信系统"><a href="#端到端的通信系统" class="headerlink" title="端到端的通信系统"></a>端到端的通信系统</h2><p>123</p>
-<h3 id="PAPR的非线性"><a href="#PAPR的非线性" class="headerlink" title="PAPR的非线性"></a>PAPR的非线性</h3><p>123</p>
-<div id="container"></div>
-<link rel="stylesheet" href="https://jjeejj.github.io/css/gitment.css">
-<script src="https://www.wenjunjiang.win/js/gitment.js"></script>
-<script>
-var gitment = new Gitment({
-  id: '<%= page.date %>', // 可选。默认为 location.href
-  owner: 'rjx-965',
-  repo: 'rjx-965.github.io',
-  oauth: {
-    client_id: 'dec9bedb8959a5b76ea5',
-    client_secret: 'fba57aad0356aaf1f4aaeb29e56ea3c2ad30d7ac',
-  },
-})
-gitment.render('container')
-</script>
-
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/02/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Ren Jiaxin">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="天意怜幽草，人间重晚晴">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/09/02/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-09-02T15:06:28+08:00">
-                2019-09-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/09/02/communication/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -960,7 +716,7 @@ gitment.render('container')
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
