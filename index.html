@@ -325,17 +325,7 @@
 <ul>
 <li>超快速度</li>
 <li>支持Markdown</li>
-<li>可以通过命令行一键部署</li>
-</ul>
-<h2 id="2-环境准备"><a href="#2-环境准备" class="headerlink" title="2.环境准备"></a>2.环境准备</h2><h3 id="2-1-安装-node-js"><a href="#2-1-安装-node-js" class="headerlink" title="2.1 安装 node.js"></a>2.1 安装 node.js</h3><p>去<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">nodejs官网</a>选择合适的系统安装包进行安装。</p>
-<hr>
-<p>检查是否安装成功:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ node -v</span><br></pre></td></tr></table></figure>
-
-<p><img src="resources/1C60A198D79234A0D8B426BA0D0686CA.jpg" alt></p>
-<h3 id="2-2-安装-hexo"><a href="#2-2-安装-hexo" class="headerlink" title="2.2 安装 hexo"></a>2.2 安装 hexo</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g  <span class="comment">#linux系统</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo npm install hexo-cli -g <span class="comment">#mac</span></span><br></pre></td></tr></table></figure>
+<li>可以通过命令行一键部署
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2019/09/02/blog/#more" rel="contents">
@@ -345,7 +335,7 @@
           <!--/noindex-->
         
       
-    </div>
+    </li></ul></div>
     
     
     
@@ -627,9 +617,6 @@
         
           <h2 id="信道估计"><a href="#信道估计" class="headerlink" title="信道估计"></a>信道估计</h2><p>&ensp;&ensp;&ensp;&ensp;在大规模 MIMO 波束毫米波场景下，信道估计极具挑战性，尤其是在天线阵列密集、接收机配备的射频链路受限的场景。</p>
 <h4 id="1-Deep-learning-based-channel-estimation-for-beamspace-mmWave-massive-MIMO-systems"><a href="#1-Deep-learning-based-channel-estimation-for-beamspace-mmWave-massive-MIMO-systems" class="headerlink" title="1.Deep learning-based channel estimation for beamspace mmWave massive MIMO systems"></a>1.<a href="https://arxiv.org/pdf/1802.01290.pdf" target="_blank" rel="noopener">Deep learning-based channel estimation for beamspace mmWave massive MIMO systems</a></h4><p>&ensp;&ensp;&ensp;&ensp;LDAMP网络来解决这一信道估计问题。该网络将信道矩阵视作二维图像作为输入，并将降噪的卷积神经网络融合到迭代信号重建算法中进行信道估计。它不是直接从含有噪声的信道图像中学习信道图像，而是先学习残余噪声，然后通过相减操作获得信道估计的图像。</p>
-<hr>
-<h4 id="2-Learning-the-MMSE-channel-estimator"><a href="#2-Learning-the-MMSE-channel-estimator" class="headerlink" title="2.Learning the MMSE channel estimator"></a>2.<a href="https://arxiv.org/pdf/1707.05674.pdf" target="_blank" rel="noopener">Learning the MMSE channel estimator</a></h4><p>&ensp;&ensp;&ensp;&ensp;基于深度学习的信道估计器，其中估计的信道向量为条件高斯随机变量，协方差矩阵具有随机性。如果协方差矩阵具有特普利兹特性和移不变的结构特性，则 MMSE 信道估计器的复杂度将降低很多。在信道的协方差矩阵不具备上述特性时，信道估计的复杂度将会变得很大。为了降低信道估计的复杂度，论文仍假设采用 MMSE的结构模型，并利用 CNN 对误差进行补偿。</p>
-<hr>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2019/09/02/communication/#more" rel="contents">

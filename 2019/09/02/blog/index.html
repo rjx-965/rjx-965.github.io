@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="网上有很多hexo + github的教程，但是都或多或少有些错误，在搭的过程中也遇到了一些问题。所以写一个教程，把具体的流程和遇到的问题写一下。 #搭建流程 1. Hexo 介绍Hexo是基于NodeJs的静态博客框架，简单、轻量，其生成的静态网页可以托管在Github上。  超快速度 支持Markdown 可以通过命令行一键部署  2.环境准备2.1 安装 node.js去nodejs官网选择">
+<meta name="description" content="网上有很多hexo + github的教程，但是都或多或少有些错误，在搭的过程中也遇到了一些问题。所以写一个教程，把具体的流程和遇到的问题写一下。 #搭建流程 1. Hexo 介绍Hexo是基于NodeJs的静态博客框架，简单、轻量，其生成的静态网页可以托管在Github上。  超快速度 支持Markdown 可以通过命令行一键部署">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo + github 博客搭建教程">
 <meta property="og:url" content="http://yoursite.com/2019/09/02/blog/index.html">
 <meta property="og:site_name" content="Ren 的 blog">
-<meta property="og:description" content="网上有很多hexo + github的教程，但是都或多或少有些错误，在搭的过程中也遇到了一些问题。所以写一个教程，把具体的流程和遇到的问题写一下。 #搭建流程 1. Hexo 介绍Hexo是基于NodeJs的静态博客框架，简单、轻量，其生成的静态网页可以托管在Github上。  超快速度 支持Markdown 可以通过命令行一键部署  2.环境准备2.1 安装 node.js去nodejs官网选择">
+<meta property="og:description" content="网上有很多hexo + github的教程，但是都或多或少有些错误，在搭的过程中也遇到了一些问题。所以写一个教程，把具体的流程和遇到的问题写一下。 #搭建流程 1. Hexo 介绍Hexo是基于NodeJs的静态博客框架，简单、轻量，其生成的静态网页可以托管在Github上。  超快速度 支持Markdown 可以通过命令行一键部署">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://yoursite.com/2019/09/02/blog/resources/1C60A198D79234A0D8B426BA0D0686CA.jpg">
-<meta property="og:updated_time" content="2019-09-02T13:45:16.681Z">
+<meta property="og:updated_time" content="2019-09-02T13:49:01.703Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo + github 博客搭建教程">
-<meta name="twitter:description" content="网上有很多hexo + github的教程，但是都或多或少有些错误，在搭的过程中也遇到了一些问题。所以写一个教程，把具体的流程和遇到的问题写一下。 #搭建流程 1. Hexo 介绍Hexo是基于NodeJs的静态博客框架，简单、轻量，其生成的静态网页可以托管在Github上。  超快速度 支持Markdown 可以通过命令行一键部署  2.环境准备2.1 安装 node.js去nodejs官网选择">
+<meta name="twitter:description" content="网上有很多hexo + github的教程，但是都或多或少有些错误，在搭的过程中也遇到了一些问题。所以写一个教程，把具体的流程和遇到的问题写一下。 #搭建流程 1. Hexo 介绍Hexo是基于NodeJs的静态博客框架，简单、轻量，其生成的静态网页可以托管在Github上。  超快速度 支持Markdown 可以通过命令行一键部署">
 <meta name="twitter:image" content="http://yoursite.com/2019/09/02/blog/resources/1C60A198D79234A0D8B426BA0D0686CA.jpg">
 
 
@@ -327,7 +327,9 @@
 <ul>
 <li>超快速度</li>
 <li>支持Markdown</li>
-<li>可以通过命令行一键部署</li>
+<li>可以通过命令行一键部署<a id="more"></a>
+
+</li>
 </ul>
 <h2 id="2-环境准备"><a href="#2-环境准备" class="headerlink" title="2.环境准备"></a>2.环境准备</h2><h3 id="2-1-安装-node-js"><a href="#2-1-安装-node-js" class="headerlink" title="2.1 安装 node.js"></a>2.1 安装 node.js</h3><p>去<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">nodejs官网</a>选择合适的系统安装包进行安装。</p>
 <hr>
@@ -338,8 +340,6 @@
 <h3 id="2-2-安装-hexo"><a href="#2-2-安装-hexo" class="headerlink" title="2.2 安装 hexo"></a>2.2 安装 hexo</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g  <span class="comment">#linux系统</span></span><br></pre></td></tr></table></figure>
 
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo npm install hexo-cli -g <span class="comment">#mac</span></span><br></pre></td></tr></table></figure>
-
-<a id="more"></a>
 
 <h2 id="3-在本地进行搭建博客"><a href="#3-在本地进行搭建博客" class="headerlink" title="3.在本地进行搭建博客"></a>3.在本地进行搭建博客</h2><p>cd 到想要存放博客的路径下。</p>
 <h3 id="3-1-创建博客存放目录-rjx-965-github-io"><a href="#3-1-创建博客存放目录-rjx-965-github-io" class="headerlink" title="3.1 创建博客存放目录 rjx-965.github.io"></a>3.1 创建博客存放目录 rjx-965.github.io</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init rjx<span class="number">-965.</span>github.io <span class="comment">#.github.io前面为github的用户名</span></span><br><span class="line">$ cd rjx<span class="number">-965.</span>github.io</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
