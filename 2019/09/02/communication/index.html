@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="##信道估计&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;在大规模 MIMO 波束毫米波场景下，信道估计极具挑战性，尤其是在天线阵列密集、接收机配备的射频链路受限的场景。 ####1.Deep learning-based channel estimation for beamspace mmWave massive MIMO systems&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;LDA">
+<meta name="description" content="信道估计&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;在大规模 MIMO 波束毫米波场景下，信道估计极具挑战性，尤其是在天线阵列密集、接收机配备的射频链路受限的场景。 1.Deep learning-based channel estimation for beamspace mmWave massive MIMO systems&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;LDAMP网络来解">
 <meta property="og:type" content="article">
 <meta property="og:title" content="通信和机器学习深度学习的结合">
 <meta property="og:url" content="http://yoursite.com/2019/09/02/communication/index.html">
 <meta property="og:site_name" content="今天也是想当算法狗的一天">
-<meta property="og:description" content="##信道估计&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;在大规模 MIMO 波束毫米波场景下，信道估计极具挑战性，尤其是在天线阵列密集、接收机配备的射频链路受限的场景。 ####1.Deep learning-based channel estimation for beamspace mmWave massive MIMO systems&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;LDA">
+<meta property="og:description" content="信道估计&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;在大规模 MIMO 波束毫米波场景下，信道估计极具挑战性，尤其是在天线阵列密集、接收机配备的射频链路受限的场景。 1.Deep learning-based channel estimation for beamspace mmWave massive MIMO systems&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;LDAMP网络来解">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-02T08:21:38.300Z">
+<meta property="og:updated_time" content="2019-09-02T08:25:44.369Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="通信和机器学习深度学习的结合">
-<meta name="twitter:description" content="##信道估计&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;在大规模 MIMO 波束毫米波场景下，信道估计极具挑战性，尤其是在天线阵列密集、接收机配备的射频链路受限的场景。 ####1.Deep learning-based channel estimation for beamspace mmWave massive MIMO systems&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;LDA">
+<meta name="twitter:description" content="信道估计&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;在大规模 MIMO 波束毫米波场景下，信道估计极具挑战性，尤其是在天线阵列密集、接收机配备的射频链路受限的场景。 1.Deep learning-based channel estimation for beamspace mmWave massive MIMO systems&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;LDAMP网络来解">
 
 
 
@@ -319,21 +319,17 @@
       
 
       
-        <p>##信道估计<br>&ensp;&ensp;&ensp;&ensp;在大规模 MIMO 波束毫米波场景下，信道估计极具挑战性，尤其是在天线阵列密集、接收机配备的射频链路受限的场景。</p>
-<p>####1.<a href="https://arxiv.org/pdf/1802.01290.pdf" target="_blank" rel="noopener">Deep learning-based channel estimation for beamspace mmWave massive MIMO systems</a><br>&ensp;&ensp;&ensp;&ensp;LDAMP网络来解决这一信道估计问题。该网络将信道矩阵视作二维图像作为输入，并将降噪的卷积神经网络融合到迭代信号重建算法中进行信道估计。它不是直接从含有噪声的信道图像中学习信道图像，而是先学习残余噪声，然后通过相减操作获得信道估计的图像。</p>
+        <h2 id="信道估计"><a href="#信道估计" class="headerlink" title="信道估计"></a>信道估计</h2><p>&ensp;&ensp;&ensp;&ensp;在大规模 MIMO 波束毫米波场景下，信道估计极具挑战性，尤其是在天线阵列密集、接收机配备的射频链路受限的场景。</p>
+<h4 id="1-Deep-learning-based-channel-estimation-for-beamspace-mmWave-massive-MIMO-systems"><a href="#1-Deep-learning-based-channel-estimation-for-beamspace-mmWave-massive-MIMO-systems" class="headerlink" title="1.Deep learning-based channel estimation for beamspace mmWave massive MIMO systems"></a>1.<a href="https://arxiv.org/pdf/1802.01290.pdf" target="_blank" rel="noopener">Deep learning-based channel estimation for beamspace mmWave massive MIMO systems</a></h4><p>&ensp;&ensp;&ensp;&ensp;LDAMP网络来解决这一信道估计问题。该网络将信道矩阵视作二维图像作为输入，并将降噪的卷积神经网络融合到迭代信号重建算法中进行信道估计。它不是直接从含有噪声的信道图像中学习信道图像，而是先学习残余噪声，然后通过相减操作获得信道估计的图像。</p>
 <hr>
-<p>####2.<a href="https://arxiv.org/pdf/1707.05674.pdf" target="_blank" rel="noopener">Learning the MMSE channel estimator</a><br>&ensp;&ensp;&ensp;&ensp;基于深度学习的信道估计器，其中估计的信道向量为条件高斯随机变量，协方差矩阵具有随机性。如果协方差矩阵具有特普利兹特性和移不变的结构特性，则 MMSE 信道估计器的复杂度将降低很多。在信道的协方差矩阵不具备上述特性时，信道估计的复杂度将会变得很大。为了降低信道估计的复杂度，论文仍假设采用 MMSE的结构模型，并利用 CNN 对误差进行补偿。</p>
+<h4 id="2-Learning-the-MMSE-channel-estimator"><a href="#2-Learning-the-MMSE-channel-estimator" class="headerlink" title="2.Learning the MMSE channel estimator"></a>2.<a href="https://arxiv.org/pdf/1707.05674.pdf" target="_blank" rel="noopener">Learning the MMSE channel estimator</a></h4><p>&ensp;&ensp;&ensp;&ensp;基于深度学习的信道估计器，其中估计的信道向量为条件高斯随机变量，协方差矩阵具有随机性。如果协方差矩阵具有特普利兹特性和移不变的结构特性，则 MMSE 信道估计器的复杂度将降低很多。在信道的协方差矩阵不具备上述特性时，信道估计的复杂度将会变得很大。为了降低信道估计的复杂度，论文仍假设采用 MMSE的结构模型，并利用 CNN 对误差进行补偿。</p>
 <hr>
-<p>##信号检测</p>
-<p>####1.<a href="https://arxiv.org/pdf/1708.08514.pdf" target="_blank" rel="noopener"> Power of deep learning for channel estimation and signal detection in OFDM systems</a><br>&ensp;&ensp;&ensp;&ensp;利用 DNN 实现 OFDM系统中的信号检测问题。论文将信道估计和信号检测视为一个整体，直接用 DNN 实现由接收信号到原始信号的映射。<br>&ensp;&ensp;&ensp;&ensp;缺点：1.训练时间和复杂度较高；2.非线性情况还没有得到很好地解决。</p>
-<p>####2.<a href="https://arxiv.org/pdf/1706.01151.pdf" target="_blank" rel="noopener">Deep MIMO detection</a><br>&ensp;&ensp;&ensp;&ensp; MIMO 系统的信号重建问题，提出了信号检测算法 DetNet。DetNet 在最大似然法基础上加入梯度下降算法，从而生成一个深度学习网络。</p>
+<h2 id="信号检测"><a href="#信号检测" class="headerlink" title="信号检测"></a>信号检测</h2><h4 id="1-Power-of-deep-learning-for-channel-estimation-and-signal-detection-in-OFDM-systems"><a href="#1-Power-of-deep-learning-for-channel-estimation-and-signal-detection-in-OFDM-systems" class="headerlink" title="1. Power of deep learning for channel estimation and signal detection in OFDM systems"></a>1.<a href="https://arxiv.org/pdf/1708.08514.pdf" target="_blank" rel="noopener"> Power of deep learning for channel estimation and signal detection in OFDM systems</a></h4><p>&ensp;&ensp;&ensp;&ensp;利用 DNN 实现 OFDM系统中的信号检测问题。论文将信道估计和信号检测视为一个整体，直接用 DNN 实现由接收信号到原始信号的映射。<br>&ensp;&ensp;&ensp;&ensp;缺点：1.训练时间和复杂度较高；2.非线性情况还没有得到很好地解决。</p>
+<h4 id="2-Deep-MIMO-detection"><a href="#2-Deep-MIMO-detection" class="headerlink" title="2.Deep MIMO detection"></a>2.<a href="https://arxiv.org/pdf/1706.01151.pdf" target="_blank" rel="noopener">Deep MIMO detection</a></h4><p>&ensp;&ensp;&ensp;&ensp; MIMO 系统的信号重建问题，提出了信号检测算法 DetNet。DetNet 在最大似然法基础上加入梯度下降算法，从而生成一个深度学习网络。</p>
 <hr>
-<p>##信道状态信息(CSI)的反馈与重建</p>
-<hr>
-<p>##信道解码</p>
-<hr>
-<p>##端到端的通信系统</p>
-<p>###PAPR的非线性</p>
+<h2 id="信道状态信息-CSI-的反馈与重建"><a href="#信道状态信息-CSI-的反馈与重建" class="headerlink" title="信道状态信息(CSI)的反馈与重建"></a>信道状态信息(CSI)的反馈与重建</h2><hr>
+<h2 id="信道解码"><a href="#信道解码" class="headerlink" title="信道解码"></a>信道解码</h2><hr>
+<h2 id="端到端的通信系统"><a href="#端到端的通信系统" class="headerlink" title="端到端的通信系统"></a>端到端的通信系统</h2><p>###PAPR的非线性</p>
 
       
     </div>
@@ -418,8 +414,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -479,6 +484,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#信道估计"><span class="nav-number">1.</span> <span class="nav-text">信道估计</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-Deep-learning-based-channel-estimation-for-beamspace-mmWave-massive-MIMO-systems"><span class="nav-number">1.0.1.</span> <span class="nav-text">1.Deep learning-based channel estimation for beamspace mmWave massive MIMO systems</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-Learning-the-MMSE-channel-estimator"><span class="nav-number">1.0.2.</span> <span class="nav-text">2.Learning the MMSE channel estimator</span></a></li></ol></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#信号检测"><span class="nav-number">2.</span> <span class="nav-text">信号检测</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-Power-of-deep-learning-for-channel-estimation-and-signal-detection-in-OFDM-systems"><span class="nav-number">2.0.1.</span> <span class="nav-text">1. Power of deep learning for channel estimation and signal detection in OFDM systems</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-Deep-MIMO-detection"><span class="nav-number">2.0.2.</span> <span class="nav-text">2.Deep MIMO detection</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#信道状态信息-CSI-的反馈与重建"><span class="nav-number">3.</span> <span class="nav-text">信道状态信息(CSI)的反馈与重建</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#信道解码"><span class="nav-number">4.</span> <span class="nav-text">信道解码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#端到端的通信系统"><span class="nav-number">5.</span> <span class="nav-text">端到端的通信系统</span></a></li></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
