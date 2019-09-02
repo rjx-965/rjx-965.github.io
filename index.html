@@ -260,7 +260,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-09-02T15:16:06+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-09-02T16:17:01+08:00">
                 2019-09-02
               </time>
             
@@ -270,6 +270,28 @@
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/机器学习/" itemprop="url" rel="index">
+                    <span itemprop="name">机器学习</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -300,17 +322,13 @@
       
         
           
-            <h2 id="Numpy"><a href="#Numpy" class="headerlink" title="Numpy"></a>Numpy</h2><p>###1.numpy 对文本的编辑</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy as np</span><br><span class="line"></span><br><span class="line">filename = '/Users/renjiaxin/Downloads/numpy/test.txt'</span><br><span class="line">file = open(filename,mode=<span class="string">'r'</span>)</span><br><span class="line">text = file.read()</span><br><span class="line">print(file.closed)</span><br><span class="line">file.close()</span><br><span class="line">print(text)</span><br></pre></td></tr></table></figure>
+            <h2 id="Numpy"><a href="#Numpy" class="headerlink" title="Numpy"></a>Numpy</h2><h3 id="1-numpy-对文本的编辑"><a href="#1-numpy-对文本的编辑" class="headerlink" title="1.numpy 对文本的编辑"></a>1.numpy 对文本的编辑</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy as np</span><br><span class="line"></span><br><span class="line">filename = '/Users/renjiaxin/Downloads/numpy/test.txt'</span><br><span class="line">file = open(filename,mode=<span class="string">'r'</span>)</span><br><span class="line">text = file.read()</span><br><span class="line">print(file.closed)</span><br><span class="line">file.close()</span><br><span class="line">print(text)</span><br></pre></td></tr></table></figure>
 
-<p>###2.numpy对矩阵的操作</p>
-<p>####① 矩阵的特性</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">array = np.array([[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>],[<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>]])</span><br><span class="line">print(array)</span><br><span class="line">print(<span class="string">'Number of dim'</span>,array.ndim) <span class="comment">#矩阵的维数</span></span><br><span class="line">print(<span class="string">'shape'</span>,array.shape) <span class="comment">#矩阵的形状</span></span><br><span class="line">print(<span class="string">'size'</span>,array.size) <span class="comment">#矩阵的大小</span></span><br></pre></td></tr></table></figure>
+<h3 id="2-numpy对矩阵的操作"><a href="#2-numpy对矩阵的操作" class="headerlink" title="2.numpy对矩阵的操作"></a>2.numpy对矩阵的操作</h3><h4 id="①-矩阵的特性"><a href="#①-矩阵的特性" class="headerlink" title="① 矩阵的特性"></a>① 矩阵的特性</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">array = np.array([[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>],[<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>]])</span><br><span class="line">print(array)</span><br><span class="line">print(<span class="string">'Number of dim'</span>,array.ndim) <span class="comment">#矩阵的维数</span></span><br><span class="line">print(<span class="string">'shape'</span>,array.shape) <span class="comment">#矩阵的形状</span></span><br><span class="line">print(<span class="string">'size'</span>,array.size) <span class="comment">#矩阵的大小</span></span><br></pre></td></tr></table></figure>
 
 <p>result :</p>
 <p><img src="resources/76758A1B209EF211E8CE3A8E822C688A.jpg" alt></p>
-<p>####② 矩阵的创建</p>
-
+<h4 id="②-矩阵的创建"><a href="#②-矩阵的创建" class="headerlink" title="② 矩阵的创建"></a>② 矩阵的创建</h4>
           
         
       
@@ -353,7 +371,7 @@
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-通信" itemscope itemtype="http://schema.org/Article">
   
   
   
@@ -389,7 +407,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-09-02T15:13:44+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-09-02T16:15:08+08:00">
                 2019-09-02
               </time>
             
@@ -400,9 +418,29 @@
           </span>
 
           
-
-          
+            <span class="post-category">
             
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/通信/" itemprop="url" rel="index">
+                    <span itemprop="name">通信</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
           
 
           
@@ -664,7 +702,25 @@
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
             
 
           </nav>
